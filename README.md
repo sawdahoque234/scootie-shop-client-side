@@ -1,6 +1,6 @@
 # Scootie Shop
 
-This project was bootstrapped with [Create React App](https://warm-sea-06523.herokuapp.com/).
+This project was bootstrapped with [Create React App](https://my-scootie-shop.web.app/home).
 
 ## About our Shop
 
