@@ -12,7 +12,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/vehicles', data)
+        axios.post('https://warm-sea-06523.herokuapp.com/vehicles', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Product added successfully!!')

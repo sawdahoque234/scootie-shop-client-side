@@ -18,7 +18,7 @@ const Orderpage = () => {
   
   
     useEffect(() => {
-        fetch(`http://localhost:5000/vehicles/${vehicleId}`)
+        fetch(`https://warm-sea-06523.herokuapp.com/vehicles/${vehicleId}`)
             .then(res => res.json())
             .then(data => setVehicle(data))
     },[vehicleId])
@@ -28,7 +28,7 @@ const Orderpage = () => {
         const ordered = { ...vehicle }
         data.order = ordered;
         data.status = "pending";
-    fetch('http://localhost:5000/orders', {
+    fetch('https://warm-sea-06523.herokuapp.com/orders', {
         method: 'POST',
         headers: {
             'content-type':'application/json'

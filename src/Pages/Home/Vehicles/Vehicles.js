@@ -9,7 +9,7 @@ import { Container } from '@mui/material';
 const Vehicles = () => {
     const [vehicles, setVehicles] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/vehicles')
+        fetch('https://warm-sea-06523.herokuapp.com/vehicles')
             .then(res => res.json())
             .then(data => setVehicles(data));
     }, [])

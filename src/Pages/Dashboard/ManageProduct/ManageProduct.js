@@ -4,13 +4,13 @@ const ManageProduct = () => {
     const [vehicles, setVehicles] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/vehicles')
+        fetch('https://warm-sea-06523.herokuapp.com/vehicles')
             .then(res => res.json())
             .then(data => setVehicles(data));
     }, [])
 
     const handledelete = vehicle => {
-        const url = `http://localhost:5000/vehicles/${vehicle}`;
+        const url = `https://warm-sea-06523.herokuapp.com/vehicles/${vehicle}`;
         fetch(url, {
             method:"DELETE"
         })

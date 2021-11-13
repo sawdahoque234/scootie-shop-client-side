@@ -41,7 +41,7 @@ function Dashboard(props) {
         setMobileOpen(!mobileOpen);
     };
     React.useEffect(() => {
-        fetch(`http://localhost:5000/admin/${user?.email}`)
+        fetch(`https://warm-sea-06523.herokuapp.com/admin/${user?.email}`)
           .then((res) => res.json())
           .then((data) => {
             if (data[0]?.role === "admin") {
