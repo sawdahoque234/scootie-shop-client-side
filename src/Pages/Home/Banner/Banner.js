@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom';
 
 const banner = {
     background: `url(${bannerBg})`,
-    height:560
+    marginTop:'20px',
+    height:580
 
 }
 
